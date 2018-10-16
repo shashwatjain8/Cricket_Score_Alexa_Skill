@@ -70,7 +70,7 @@ def cancel_Intent():
 
 @ask.intent("AMAZON.HelpIntent")
 def help_Intent():
-    message = 'Utter the team name for which you want to know the score..'
+    message = 'Say name of your favorite cricket team prefixed by team..'
     return question(message)
 
 if __name__ == '__main__':
