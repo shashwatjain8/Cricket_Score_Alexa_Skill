@@ -63,12 +63,12 @@ def no_Intent():
     message = 'Well that is fine...Maybe next time'
     return statement(message)
 
-@ask.intent("CancelIntent")
+@ask.intent("AMAZON.CancelIntent")
 def cancel_Intent():
     message = 'See you again...bye'
     return statement(message)
 
-@ask.intent("HelpIntent")
+@ask.intent("AMAZON.HelpIntent")
 def help_Intent():
     message = 'Utter the team name for which you want to know the score..'
     return statement(message)
