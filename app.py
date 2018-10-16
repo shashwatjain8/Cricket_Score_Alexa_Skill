@@ -66,7 +66,7 @@ def no_Intent():
 @ask.intent("AMAZON.CancelIntent")
 def cancel_Intent():
     message = 'See you again...bye'
-    return statement(message)
+    return question(message)
 
 @ask.intent("AMAZON.HelpIntent")
 def help_Intent():
