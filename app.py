@@ -66,12 +66,12 @@ def no_Intent():
 @ask.intent("AMAZON.CancelIntent")
 def cancel_Intent():
     message = 'See you again...bye'
-    return question(message)
+    return statement(message)
 
 @ask.intent("AMAZON.HelpIntent")
 def help_Intent():
     message = 'Utter the team name for which you want to know the score..'
-    return statement(message)
+    return question(message)
 
 if __name__ == '__main__':
     app.run(debug = True)
