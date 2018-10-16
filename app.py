@@ -52,7 +52,7 @@ def start_skill():
 
 @ask.intent("TeamIntent")
 def team_intent():
-	team = intent['slots']['teamname']['value']
+	team = intent['slots']['teamname']
 	team_score =  getscore(team)
 	team_score = team_score.replace('/'," for ")
 	team_score = team_score.replace('*'," with innings in progess ")
