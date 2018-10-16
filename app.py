@@ -50,10 +50,10 @@ def start_skill():
     message = 'Hey.. Which team\'s score would you like to know?'
     return question(message)
 
-@ask.intent("TeamIntent")
-def team_intent(team):
+@ask.intent("TeamIntent",convert = {"teamname" : str})
+def team_intent(teamname):
 	#team = intent['slots']['teamname']
-	team_score =  getscore(team)
+	team_score =  getscore(teamname)
 	team_score = team_score.replace('/'," for ")
 	team_score = team_score.replace('*'," with innings in progess ")
 	return statement(team_score)
