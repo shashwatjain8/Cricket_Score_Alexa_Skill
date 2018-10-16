@@ -68,6 +68,11 @@ def cancel_Intent():
     message = 'See you again...bye'
     return statement(message)
 
+@ask.intent("AMAZON.StopIntent")
+def stop_Intent():
+    message = 'See you again...bye'
+    return statement(message)
+
 @ask.intent("AMAZON.HelpIntent")
 def help_Intent():
     message = 'Say name of your favorite cricket team prefixed by team..'
