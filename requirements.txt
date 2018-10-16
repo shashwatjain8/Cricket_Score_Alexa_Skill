@@ -1,0 +1,7 @@
+Flask
+flask-ask
+gunicorn==19.6.0
+pyOpenSSL==17.0.0
+cryptography<2.2
+beautifulsoup4
+requests
