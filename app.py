@@ -79,4 +79,4 @@ def help_Intent():
     return question(message)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(threaded = True)
