@@ -1,5 +1,7 @@
 # Cricket_Score_Alexa_Skill
 
+![alexa_cricket_big](https://user-images.githubusercontent.com/16372619/47131756-23244980-d2be-11e8-9458-c3e5e06badfe.jpg)
+
 Now ask Alexa, to get live cricket score for your favorite srciekt team.
 
 Usage:
